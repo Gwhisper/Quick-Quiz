@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High Scores</title>
+    <link rel="stylesheet" href="highscores.css">
+</head>
+<body>
+    <div class="container">
+        <h1>High Scores</h1>
+        <label for="difficulty">Select Difficulty:</label>
+        <select id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+            <option value="any">Any Category</option>
+        </select>
+        <button id="viewScores">View Scores</button>
+        <div id="scoreList" class="score-container"></div>
+        <button onclick="window.location.href='index.html'">Go Back to Quiz</button>
+        <button id="deleteSelected">Delete Selected</button>
+    </div>
+    <script src="highscores.js"></script>
+</body>
+</html>

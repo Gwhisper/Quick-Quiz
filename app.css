@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+  background-color: #ecf5ff;
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #070F2B url('img/background.jpg') no-repeat center center fixed;
+  background-size: cover; /* This will make sure the image covers the whole body */
+}
+
+/* Center the container vertically and horizontally */
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 40rem;
+  height: auto;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  padding: 3rem;
+  overflow: hidden;
+  border-radius: 3rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto; /* Ensures horizontal centering */
+  margin-top: auto;
+  margin-bottom: auto; /* Ensures vertical centering */
+}
+
+h1, h2, h3, h4 {
+  color: #fff;
+  text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+  color: #fff;
+  margin-bottom: 0rem;
+}
+
+h2 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+label {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+select,
+input {
+  width: 100%;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: #fff;
+  font-size: 1.6rem;
+  color: #1f2847;
+  box-shadow: 0 0.4rem 1.4rem rgba(86, 185, 235, 0.5);
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+.btn {
+  width: 100%;
+  padding: 1.5rem;
+  background-color: #4477CE;
+  color: #fff;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.3s;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.btn:hover {
+  background-color: #0a6bc5;
+}
+
+.btn[disabled] {
+  background-color: #576081;
+  cursor: not-allowed;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+@media (max-width: 468px) {
+  .container {
+    max-width: 100%;
+    border-radius: 0;
+  }
+}
+
+/* Header and Footer Styling */
+header{
+  background-color: #35155D;
+  color: white;
+  padding: 1rem 2rem;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+footer{
+  background-color: #35155D;
+  color: white;
+  padding: 1rem 2rem;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  min-height: 5vh;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-container h1 {
+  font-size: 2.5rem;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+  padding-right: 30px;
+}
+
+nav a {
+  color: white;
+  font-size: 1.6rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #0c80ef;
+}
+
+.footer-container {
+  text-align: center;
+}
+
+footer p {
+  font-size: 1.4rem;
+  color: #fff;
+}

@@ -1,0 +1,68 @@
+body {
+    background: rgba(0, 0, 0, 0.8) url('img/background.jpg') no-repeat center center fixed; /* Black transparent background with image */
+    background-size: cover; /* Ensure the image covers the entire body */
+    color: white; /* Text color */
+    font-family: Arial, sans-serif; /* Font style */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove padding */
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Minimum height for full viewport */
+  }
+  
+  .container {
+    width: 700px; /* Fixed width for the container */
+    margin: 20px; /* Center the container with margin */
+    background-color: rgba(0, 0, 0, 0.8); /* Black transparent background for the container */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the container */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+  }
+  
+  
+  h1 {
+    text-align: center; /* Center the heading */
+    color: white; /* Light color for the heading */
+  }
+  
+  label {
+    display: block; /* Block display for labels */
+    margin: 10px 0; /* Margin for spacing */
+  }
+  
+  select, button {
+    width: 100%; /* Full width for buttons and selects */
+    padding: 10px; /* Padding for better touch target */
+    margin: 5px 0; /* Margin for spacing */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #4477CE; /* Button background color */
+    color: white; /* Button text color */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor for buttons */
+  }
+  
+  button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+  }
+  
+  #scoreList {
+    margin-top: 20px; /* Space above the score list */
+    padding: 10px; /* Padding inside the score list */
+    background-color: #dddfeb; /* Light background for score list */
+    border-radius: 5px; /* Rounded corners */
+    height: 200px; /* Fixed height for the score list */
+    overflow-y: auto; /* Allow vertical scrolling */
+  }
+  
+  .score-item {
+    padding: 10px; /* Padding for each score item */
+    border-bottom: 1px solid #1f2847; /* Bottom border for separation */
+    color: black; /* Text color for score items */
+  }
+  
+  .score-item:last-child {
+    border-bottom: none; /* No border for the last item */
+  }
+  

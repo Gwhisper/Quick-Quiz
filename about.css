@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Base Styling */
+:root {
+  font-size: 62.5%;
+  background-color: #ecf5ff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #070F2B url('img/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+/* Header and Footer Styling */
+header {
+  background-color: #35155D;
+  color: white;
+  padding: 1rem 2rem;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-container h1 {
+  font-size: 2.5rem;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+  padding-right: 30px;
+}
+
+nav a {
+  color: white;
+  font-size: 1.6rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #0c80ef;
+}
+
+footer {
+  background-color: #35155D;
+  color: white;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.4);
+  font-size: medium;
+}
+
+.footer-bottom {
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+/* Footer Links */
+.footer-links,
+.footer-contact,
+.footer-social {
+  flex: 1;
+  min-width: 200px;
+  margin: 1rem;
+  text-align: center;
+}
+
+.footer-links h3,
+.footer-contact h3,
+.footer-social h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links li {
+  margin: 0.5rem 0;
+}
+
+.footer-links a,
+.footer-contact a,
+.footer-social a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+  color: #0c80ef;
+}
+
+/* Updated Footer Social Styling */
+.footer-social {
+  text-align: center;
+  display: block; /* Change to block to stack items vertically */
+  margin-top: 1rem; /* Add some spacing above the links */
+}
+
+.footer-social a {
+  display: block; /* Each link takes up the full width */
+  margin: 0.5rem 0; /* Space between each link */
+  color: #ffffff; /* Link color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s; /* Transition effect for hover */
+}
+
+.footer-social a:hover {
+  color: #0c80ef; /* Change color on hover */
+}
+
+/* About Content Container */
+.about-content-container {
+  position: relative;
+  width: 85%;
+  max-width: 75rem;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 4rem;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  margin: 5rem auto;
+  color: white;
+  font-size: large;
+}
+
+.about-content-container h1 {
+  text-align: center;
+}
+
+/* Additional Section Styling */
+.solid-dark-container {
+  background-color: #151515;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  margin-top: 2rem;
+  color: #eaeaea;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
+}
+
+.solid-dark-container h3 {
+  text-align: center;
+}
+
+.solid-black-section {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+  background-color: #35155D;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.black-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 100px;
+  font-size: large;
+}
+
+.black-content h2,
+.black-content p {
+  margin-bottom: 2rem;
+}
+
+.grey-container {
+  background-color: #151515;
+  color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 300px;
+  flex: 1;
+  margin: 0 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.grey-container-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.grey-container-wrapper h1 {
+  margin-bottom: 20px;
+}
+/*  3rd Section  */
+.transition-section {
+  min-height: 100vh;  
+  background: url('img/code.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.new-content {
+  background: #151515;
+  padding: 4rem; /* Adjusted padding for better spacing */
+  border-radius: 2rem;
+  text-align: center;
+  color: #fff;
+  max-width: 1200px; /* Set a max width for the content */
+  margin: 0 auto; /* Center the container */
+}
+
+.problem-solution-container {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: space-between; /* Space between the two sections */
+  align-items: flex-start; /* Align items at the start */
+  gap: 10rem; /* Add gap between the problem and solution sections */
+}
+
+.problem, .solution {
+  flex: 1; /* Make both sections take equal space */
+  min-width: 300px; /* Ensure a minimum width for responsiveness */
+}
+
+.problem p, 
+.solution p {
+  font-size: large; /* Set font size for paragraphs */
+}
+
+.problem h2, 
+.solution h2 {
+  font-size: x-large; /* Set font size for headers */
+}
+
+.problem img, 
+.solution img {
+  max-width: 100%; /* Ensure images fit within their containers */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 3rem; /* Optional: Add rounded corners to images */
+  padding: 10px; /* Padding around images */
+}
+
+/*  3rd Section  */
+
+/* Team Members Styling */
+.team-section {
+  background-color: #2D033B;
+  padding: 4rem 0;
+  color: #ffffff;
+  min-height: 80vh;
+}
+
+.member-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.member {
+  background: #151515;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 350px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.member img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.member h3 {
+  font-size: 1.6rem;
+  margin: 0.5rem 0;
+}
+
+.member p {
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+/* Scroll to Top Button */
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px; /* Adjust this value as needed */
+  right: 20px; /* Adjust this value as needed */
+  background-color: #333; /* Button background color */
+  color: white; /* Button text color */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 15px; /* Padding around the icon */
+  font-size: 20px; /* Font size for the icon */
+  display: none; /* Hidden by default */
+  z-index: 1000; /* On top of other elements */
+  text-align: center; /* Center the icon */
+}
+
+.scroll-to-top:hover {
+  background-color: #555; /* Darker background on hover */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Team Section Title */
+.team-section .container h2 {
+  text-align: center;
+  font-size: xx-large;
+  padding-bottom: 30px;
+  padding-top: 115px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-content-container, .new-content, .black-content, .grey-container {
+    padding: 2rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .header-container h1 {
+    font-size: 3rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-links,
+  .footer-contact,
+  .footer-social {
+    margin: 1rem 0;
+  }
+}

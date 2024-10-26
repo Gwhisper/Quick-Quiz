@@ -1,0 +1,275 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #070F2B url('img/background.jpg') no-repeat center center fixed;
+  background-size: cover; /* This will make sure the image covers the whole body */
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  background: rgba(0, 0, 0, 0.8); /* Black color with transparency */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+  text-align: center;
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+label {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  text-transform: capitalize;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background: #fff;
+  color: #1f2847;
+  font-size: 14px;
+}
+
+.start-screen .btn {
+  margin-top: 50px;
+}
+
+.hide {
+  display: none;
+}
+
+.timer {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.timer .progress {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  background: transparent;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  border: 3px solid #3f4868;
+}
+
+.timer .progress .progress-bar {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  overflow: hidden;
+  background: linear-gradient(to right, #ea517c, #b478f1);
+  transition: 1s linear;
+}
+
+.timer .progress .progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.question-wrapper .number {
+  color: #a2aace;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.question-wrapper .number .total {
+  color: #576081;
+  font-size: 18px;
+}
+
+.question-wrapper .question {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.answer-wrapper .answer {
+  width: 100%;
+  height: 60px;
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  border: 3px solid #3f4868;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+
+.answer .checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3px solid #3f4868;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.answer .checkbox i {
+  color: #fff;
+  font-size: 10px;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.answer:hover:not(.checked) .checkbox,
+.answer.selected .checkbox {
+  background-color: #0c80ef;
+  border-color: #0c80ef;
+}
+
+.answer.selected .checkbox i {
+  opacity: 1;
+}
+
+.answer.correct {
+  border-color: #0cef2a;
+}
+
+.answer.wrong {
+  border-color: #fc3939;
+}
+
+.question-wrapper,
+.answer-wrapper {
+  margin-bottom: 50px;
+}
+
+/* Ensure the buttons are full-width and spaced correctly */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between buttons */
+  padding: 20px; /* Padding around the button container */
+}
+
+.button-container .btn {
+  width: 100%; /* Full width of the container */
+  padding: 15px; /* Increase button size */
+  font-size: 1.2rem; /* Larger font size for readability */
+  background-color: #4477CE; /* Primary color for buttons */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-container .btn:hover {
+  background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+.btn {
+  background-color: #4477CE; /* Blue background */
+  width: 98%;
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 10px 20px; /* Padding for the button */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Keep it inline */
+  font-size: 16px; /* Font size */
+  margin: 10px 5px; /* Margin between buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.btn:hover {
+  background: #0a6bc5; /* Darker blue on hover */
+}
+
+.btn:disabled {
+  background: #576081;
+  cursor: not-allowed;
+}
+
+.btn.next {
+  display: none;
+}
+
+.end-screen .score {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.score .score-text {
+  color: #a2aace;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 120px;
+}
+
+@media (max-width: 468px) {
+  .container {
+    min-height: 100vh;
+    max-width: 100%;
+    border-radius: 0;
+  }
+}
+
+.end-screen {
+  text-align: center; /* Center-align the content */
+}
+
+.username-input {
+  margin: 20px 0; /* Add some margin above and below the input */
+}
+
+.username-input label {
+  display: block; /* Make the label a block element */
+  margin-bottom: 10px; /* Space between label and input */
+  font-weight: bold; /* Make label text bold */
+}
+
+.username-input input {
+  width: 80%; /* Set the width of the input field */
+  max-width: 300px;
+  padding: 10px; /* Padding inside the input */
+  border: 2px solid #ccc; /* Border style */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 14px; /* Font size */
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>About - Quick Quiz</title>
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <h1>Quick Quiz</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="about.html#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- First Section -->
+    <section class="about-main">
+        <div class="about-content-container">
+            <h1>About Quick Quiz</h1>
+            <p>
+                Welcome to Quick Quiz! Our goal is to create enjoyable quizzes that enhance the learning experience. We have designed our platform with modern web principles, ensuring it is user-friendly and accessible.
+            </p>
+            
+            <!-- Solid Dark Container for Additional Content -->
+            <div class="solid-dark-container">
+                <h1>Builder Design Pattern</h1>
+                <p>
+                    The Builder Design Pattern is a programming technique that allows for the step-by-step construction of complex objects. This approach enables us to customize and adapt the creation process instead of relying on a single method.
+                </p><br>
+                <p>
+                    At Quick Quiz, we implement the Builder Design Pattern to create quizzes that are flexible and tailored to each user.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Second Section  -->
+    <section class="solid-black-section">
+        <div class="black-content">
+            <h2>Our Mission</h2>
+            <p>To provide a platform that makes learning fun and accessible through quizzes.</p>
+            
+            <!-- Wrapper for grey containers -->
+            <div class="grey-container-wrapper">
+                <div class="grey-container">
+                    <h1>Easy Customization</h1>
+                    <p>Users can pick their quiz details, like category and difficulty. This lets everyone create a quiz they enjoy.</p>
+                </div>
+                <div class="grey-container">
+                    <h1>Organized Structure</h1>
+                    <p>The pattern breaks down the quiz creation process into simple steps, making it easier for users to understand what to do next.</p>
+                </div>
+                <div class="grey-container">
+                    <h1>Better User Experience</h1>
+                    <p>The pattern helps guide users through the quiz setup steps, making it easy and fun to get started.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Third Section -->
+    <section class="transition-section">
+        <div class="new-content">
+            <div class="problem-solution-container">
+                <div class="problem">
+                    <h2>Problem</h2>
+                    <p>
+                        
+Making a complex object needs many steps, and these steps are often hidden in a big instruction list or all over the code.</p>
+                    <img src="img/problem.jpg" alt="Problem Image">
+                </div>
+                <div class="solution">
+                    <h2>Solution</h2>
+                    <p>The Builder pattern organizes object creation by using smaller helpers called builders instead of one big instruction manual.</p>
+                    <img src="img/solution.jpg" alt="Solution Image">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Fourth Section  -->
+<section class="team-section">
+    <div class="container">
+        <h2>Our Dream Team: Quick Quiz Creators</h2>
+        <div class="member-container">
+            <div class="member">
+                <img src="img/Alfred.jpg" alt="Alfred Miguel M. De Leon" />
+                <h3>Alfred Miguel M. De Leon</h3>
+                <p>Web Developer | UI Designer</p>
+            </div>
+            <div class="member">
+                <img src="img/danbert.jpg" alt="DanRobert Espiritu" />
+                <h3>DanRobert Espiritu</h3>
+                <p>UX Designer</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:QuickQuiz@Example.com">QuickQuiz@Example.com</a></p>
+                <p>Phone: <a href="tel:+123456789">+1 234 567 89</a></p>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Quick Quiz. Group 6 Builder Design Pattern</p>
+        </div>
+    </footer>
+    <!-- Scroll to Top Button -->
+<a href="#" class="scroll-to-top" id="scrollToTopBtn">
+    <i class="fas fa-chevron-up"></i>
+</a>
+</body>
+</html>
+
+<script>
+    // Get the button
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+    // Show the button when the user scrolls down 200px from the top of the document
+    window.onscroll = function() {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            scrollToTopBtn.style.display = "block";
+        } else {
+            scrollToTopBtn.style.display = "none";
+        }
+    };
+
+    // When the user clicks on the button, scroll to the top of the document
+    scrollToTopBtn.addEventListener("click", function(event) {
+        event.preventDefault(); // Prevent the default anchor behavior
+        window.scrollTo({top: 0, behavior: 'smooth'}); // Smooth scroll to top
+    });
+</script>
