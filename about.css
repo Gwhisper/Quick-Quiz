@@ -20,7 +20,7 @@ html {
 body {
   background: #070F2B url('img/background.jpg') no-repeat center center fixed;
   background-size: cover;
-  color: #FF0000;
+  color: #FFFFFF;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
